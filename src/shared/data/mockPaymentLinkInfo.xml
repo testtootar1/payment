@@ -1,0 +1,21 @@
+<PaymentLinkInfo>
+  <Res>Login Success</Res>
+  <HomeDetails>
+    <PolicyNumber>TRAINING TRAINING</PolicyNumber>
+    <ClientReference>CHGX08HQ01</ClientReference>
+    <Home.Address.AddrLine1>6 Blackwood Chineuuuu</Home.Address.AddrLine1>
+    <Home.Address.AddrLine2>South Woodham Ferrers</Home.Address.AddrLine2>
+    <Home.Address.AddrLine3>Chelmsford</Home.Address.AddrLine3>
+    <Home.Address.AddrPostCode>CM3 5FZ</Home.Address.AddrPostCode>
+  </HomeDetails>
+  <ProposerDetails>
+    <Proposer.Person.Title>Mr</Proposer.Person.Title>
+    <Proposer.Person.Surname>Chitticks</Proposer.Person.Surname>
+    <Proposer.Person.Forenames>Gavin</Proposer.Person.Forenames>
+    <Email></Email>
+  </ProposerDetails>
+  <PaymentDetails>
+    <Total>2546.60</Total>
+    <Payment_Description>Test Payment</Payment_Description>
+  </PaymentDetails>
+</PaymentLinkInfo>

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --scroll-thumb-color: #0f4671;
+  --scroll-track-color: #f1f1f1;
+  --brand-navy: #0f4671;
+  --brand-orange: #f15822;
+  --brand-green: #198754;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #000;
+}
+
+p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color: var(--brand-navy);
+  padding: 16px 23px;
+  color: #fff;
+  border-radius: 3px;
+  font: 700 16px 'Poppins', sans-serif;
+  border: 0;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #0a3558;
+  color: #fff;
+}
+
+.form-control {
+  height: 50px;
+  border-radius: 0;
+  border: solid 1px #eee;
+}
+
+.form-control::placeholder {
+  opacity: 1;
+  color: #a485c1;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.loading-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.loading-main .spinner-border {
+  width: 3rem;
+  height: 3rem;
+  color: var(--brand-navy);
+}
+
+.page-main-area {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-page-main-area {
+  flex: 1;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}

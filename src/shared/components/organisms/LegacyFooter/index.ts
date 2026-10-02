@@ -1,0 +1,1 @@
+export { LegacyFooter } from './LegacyFooter'

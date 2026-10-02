@@ -1,0 +1,425 @@
+.payment-page-wraper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.payment-flow-row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.product-details-left {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.price-summary.price-full-page {
+    padding: 20px !important;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 0;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.price-summary h1 {
+    margin-bottom: 1rem;
+}
+
+.summary-detail-text {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.price-summary table {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.price-summary tr th {
+    background-color: var(--brand-navy);
+    color: #fff;
+    font-weight: 600;
+}
+
+.price-summary tbody tr:last-child td {
+    background-color: var(--brand-navy);
+    color: #fff;
+}
+
+.price-summary tbody tr:last-child td strong,
+.price-summary tbody tr:last-child td {
+    color: #fff;
+    font-weight: 700;
+}
+
+.price-summary-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.price-summary-actions .btn {
+    flex: 1 1 auto;
+    min-width: 140px;
+}
+
+.price-summary-actions .btn-outline-secondary {
+    border-color: var(--brand-navy);
+    color: var(--brand-navy);
+    font-weight: 600;
+    padding: 12px 23px;
+    border-radius: 3px;
+}
+
+.payment-inline-form {
+    margin-top: 24px;
+    padding: 24px;
+    background: #f8f9fa;
+    border: 1px solid #e2e6ea;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    animation: payment-inline-form-expand 0.35s ease-out;
+}
+
+.payment-inline-form--sidebar {
+    margin-top: 0;
+    padding: 16px 12px;
+}
+
+@keyframes payment-inline-form-expand {
+    from {
+        opacity: 0;
+        max-height: 0;
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 800px;
+        margin-top: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+.payment-inline-form__loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 120px;
+    margin-bottom: 16px;
+    font: 500 14px 'Poppins', sans-serif;
+    color: var(--brand-navy);
+}
+
+.payment-inline-form__loader .spinner-border {
+    width: 2rem;
+    height: 2rem;
+    color: var(--brand-navy);
+}
+
+.payment-inline-form--loading .payment-inline-form__iframe {
+    display: none;
+}
+
+.payment-inline-form__iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-height: 580px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.payment-inline-form--sidebar .payment-inline-form__iframe,
+.payment-inline-form--address-box .payment-inline-form__iframe {
+    min-height: 420px;
+}
+
+.payment-alert {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.right-area-main {
+    width: 100%;
+}
+
+.user-info-main {
+    background-color: var(--brand-green);
+    border-radius: 20px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+}
+
+.user-info-main h2 {
+    font: 600 26px 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.user-info-main p {
+    font: 500 14px 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    border-bottom: solid 1px #cbccca;
+    padding-bottom: 10px;
+}
+
+.user-info-main p span {
+    text-align: right;
+    max-width: 55%;
+}
+
+.securing-area-main {
+    background-color: #383838;
+    border-radius: 20px;
+    padding: 20px 25px 44px;
+    margin-bottom: 25px;
+}
+
+.securing-area-main-img {
+    background-color: #4d4f50 !important;
+    padding: 25px;
+}
+
+.securing-area-main h2 {
+    font: 600 24px 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.securing-area-main p {
+    font: 400 14px 'Poppins', sans-serif;
+    color: #fff;
+    text-align: justify;
+}
+
+.securing-area-main .content ul {
+    padding: 0;
+    list-style: none;
+}
+
+.securing-area-main .content ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 19px;
+    font: 600 15px 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.securing-area-main .content ul li img {
+    margin-right: 8px;
+}
+
+.policies-area-main {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px 25px 15px;
+    margin-bottom: 25px;
+}
+
+.policies-area-main h2 {
+    font: 600 26px/30px 'Poppins', sans-serif;
+    color: #000;
+}
+
+.policies-area-main ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 19px;
+    margin-bottom: 0;
+}
+
+.policies-area-main ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 19px;
+    font: 600 15px 'Poppins', sans-serif;
+    color: #666;
+}
+
+.policies-area-main ul li img {
+    margin-right: 8px;
+}
+
+.contact-area-main {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px 25px 15px;
+    margin-bottom: 25px;
+}
+
+.contact-area-main h2 {
+    font: 600 24px 'Poppins', sans-serif;
+    color: #000;
+}
+
+.contact-area-main p {
+    font: 400 14px 'Poppins', sans-serif;
+    color: #000;
+}
+
+.phone-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+.phone-box img {
+    margin-right: 5px;
+}
+
+.phone-box p {
+    font: 700 16px 'Poppins', sans-serif;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.phone-box h3 {
+    font: 400 26px 'Poppins', sans-serif;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.office-hour-box {
+    background-color: var(--brand-navy);
+    padding: 23px 28px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.office-hour-box h5 {
+    font: 600 18px 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.office-hour-box p {
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.contact-area-main .contact-end {
+    font: 400 15px 'Poppins', sans-serif;
+    color: #666;
+}
+
+@media (max-width: 1500px) {
+    .user-info-main p {
+        font-size: 13px;
+    }
+    .user-info-main h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .payment-flow-sidebar {
+        margin-top: 8px;
+    }
+    .user-info-main p {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    .user-info-main p span {
+        max-width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .payment-page-wraper {
+        padding: 16px 0;
+    }
+    .product-page-main-area .container,
+    .product-page-main-area .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .product-details-left {
+        padding: 16px;
+        margin-bottom: 24px;
+        border-radius: 12px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    .price-summary.price-full-page {
+        padding: 12px !important;
+    }
+    .price-summary h1 {
+        font-size: 22px;
+    }
+    .summary-detail-text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .price-summary-actions {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .price-summary-actions .btn {
+        width: 100%;
+        min-width: 0;
+    }
+    .payment-inline-form {
+        margin-top: 16px;
+        padding: 16px 12px;
+        border-radius: 8px;
+    }
+    .payment-inline-form__loader {
+        min-height: 100px;
+        font-size: 13px;
+    }
+    .payment-inline-form__iframe {
+        min-height: 580px;
+    }
+    .user-info-main,
+    .securing-area-main,
+    .policies-area-main,
+    .contact-area-main,
+    .office-hour-box {
+        padding: 16px 18px;
+        border-radius: 12px;
+        margin-bottom: 16px;
+    }
+    .user-info-main h2,
+    .securing-area-main h2,
+    .policies-area-main h2,
+    .contact-area-main h2 {
+        font-size: 20px;
+    }
+    .phone-box h3 {
+        font-size: 20px;
+    }
+    .policies-area-main h2 {
+        font: 600 20px/28px 'Poppins', sans-serif;
+    }
+    .securing-area-main .content ul li,
+    .policies-area-main ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 399px) {
+    .payment-inline-form__iframe {
+        min-height: 580px;
+    }
+}

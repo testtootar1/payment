@@ -1,0 +1,18 @@
+# SPA fallback — do NOT send /api/* to index.html (fixes JSON parse error on live)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Payment APIs (PHP on cPanel)
+  RewriteRule ^api/hpp-request$ api/hpp-request.php [L,QSA]
+  RewriteRule ^api/payment-info$ api/get-payment-info.php [L,QSA]
+  RewriteRule ^get-payment-info\.php$ api/get-payment-info.php [L,QSA]
+
+  # Static files
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # React Router — all other routes → index.html
+  RewriteRule ^ index.html [L]
+</IfModule>
